@@ -23,7 +23,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
       temp.fallback = {
         ...temp.fallback,
-        ...(await import(`../../messages/en-US/${sections[i]}.json`)).default,
+        ...(
+          await import(
+            `../../messages/${routing.defaultLocale}/${sections[i]}.json`
+          )
+        ).default,
       };
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
