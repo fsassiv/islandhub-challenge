@@ -25,26 +25,28 @@
     ]
   },
   "dependencies": {
+    "next": "14.2.29",
+    "next-intl": "^4.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.29"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.4.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "deepmerge": "^4.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.29",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
-    "prettier": "^3.4.2"
+    "postcss": "^8",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
