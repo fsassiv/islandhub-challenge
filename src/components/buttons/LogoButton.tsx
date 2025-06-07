@@ -1,6 +1,6 @@
+import Logo from '@/public/icons/logo.svg';
 import Image from 'next/image';
 import { FC } from 'react';
-import Logo from '../../../public/icons/logo.svg';
 import { BaseBottomPropTypes } from './types';
 
 export const LogoButton: FC<BaseBottomPropTypes> = ({ onClick, text }) => {

@@ -1,6 +1,6 @@
+import HimOne from '@/public/images/him-one-unsplash.jpg';
 import Image from 'next/image';
 import { FC } from 'react';
-import HimOne from '../../../public/images/him-one-unsplash.jpg';
 import { BaseBottomPropTypes } from './types';
 
 export const UserBadgeButton: FC<BaseBottomPropTypes> = ({ onClick }) => {

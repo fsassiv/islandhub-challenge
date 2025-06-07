@@ -1,7 +1,7 @@
+import BagIcon from '@/public/icons/bag-5-svgrepo-com.svg';
+import HeartIcon from '@/public/icons/heart-svgrepo-com.svg';
 import Image from 'next/image';
 import { FC } from 'react';
-import BagIcon from '../../../public/icons/bag-5-svgrepo-com.svg';
-import HeartIcon from '../../../public/icons/heart-svgrepo-com.svg';
 import { IconButtonPropTypes } from './types';
 
 export const IconButton: FC<IconButtonPropTypes> = ({ onClick, icon }) => {

@@ -3,6 +3,10 @@
     "greeting": {
       "hello": "Hello World!"
     },
-    "company_name": "nitec."
+    "company_name": "nitec.",
+    "carousel": {
+      "follow_us_on": "Follow us on:",
+      "music_is_classic": "Music is classic"
+    }
   }
 }
