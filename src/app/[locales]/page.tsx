@@ -6,27 +6,38 @@ export default function Home() {
   // const t = useTranslations('general.greeting');
 
   return (
-    <div className="grid grid-cols-7 grid-rows-12 desktop:grid-rows-8 gap-4 pt-4">
-      <div className="col-span-full tablet:row-[1/6] desktop:col-[1/6] desktop:row-[1/6]">
-        <Carousel />
+    <div className="flex flex-col gap-4 mt-4 desktop:flex-row">
+      <div className="flex flex-col w-full gap-4 desktop:w-[70%]">
+        <div className="col-span-full tablet:row-[1/6] desktop:col-[1/6] desktop:row-[1/6]">
+          <Carousel />
+        </div>
+        <div className="flex flex-wrap gap-4 justify-between">
+          <div className="tablet:w-[57%] desktop:w-[35%] bg-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            voluptatem provident voluptas quam! Illum aut nesciunt reiciendis
+            error dolores adipisci! Culpa doloribus ad nobis unde est temporibus
+            tenetur fugiat cupiditate.
+          </div>
+          <div className="tablet:w-[40%] desktop:w-[20%] bg-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            eaque placeat optio nam quia illum voluptatibus iure aliquam vel
+            iusto pariatur, sequi ipsum tempore rem culpa quo corporis ea
+            soluta?
+          </div>
+          <div className="tablet:w-full desktop:w-[40%] bg-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
+            aspernatur saepe praesentium earum, fugiat deleniti quam voluptatem
+            illo soluta optio, ea ipsa maxime eveniet ut dolorum. Non
+            repellendus reprehenderit magnam.
+          </div>
+        </div>
       </div>
-      <div className="col-span-full tablet:col-[1/5] tablet:row-[6/7] desktop:col-[1/3] desktop:row-[6/8] bg-white">
-        2
-      </div>
-      <div className="col-span-full tablet:col-[5/8] tablet:row-[6/7] desktop:col-[3/3] desktop:row-[6/8] bg-white">
-        3
-      </div>
-      <div className="col-span-full tablet:row-[7/8] desktop:col-[4/6] desktop:row-[6/8] bg-white">
-        4
-      </div>
-      <div className="col-span-full bg-white tablet:col-[1/5] tablet:row-[8/9] desktop:col-[6/8] desktop:row-[1/2]">
-        5
-      </div>
-      <div className="col-span-full bg-white tablet:col-[1/5] tablet:row-[9/12] desktop:col-[6/8] desktop:row-[2/4]">
-        6
-      </div>
-      <div className="col-span-full bg-white tablet:col-[5/8] tablet:row-[8/12] desktop:col-[6/8] desktop:row-[4/8]">
-        7
+      <div className="flex flex-wrap flex-col w-full  gap-4 tablet:flex-row desktop:flex-col desktop:w-[30%] tablet:max-desktop:justify-between">
+        <div className="flex flex-col w-full tablet:max-desktop:w-[40%] gap-4">
+          <div className="bg-white">5</div>
+          <div className="bg-white">6</div>
+        </div>
+        <div className="bg-white tablet:max-desktop:w-[57%]">7</div>
       </div>
     </div>
   );
