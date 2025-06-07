@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "commit": "cz"
+    "commit": "cz",
+    "commit:allow-console": "ALLOW_CONSOLE=true cz"
   },
   "config": {
     "commitizen": {
