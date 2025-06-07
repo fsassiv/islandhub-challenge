@@ -2,6 +2,7 @@
   "general": {
     "greeting": {
       "hello": "Hello World!"
-    }
+    },
+    "company_name": "nitec."
   }
 }

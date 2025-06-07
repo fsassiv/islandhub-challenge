@@ -3,7 +3,7 @@ import { AbstractIntlMessages, hasLocale } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
 import { routing } from './routing';
 
-const sections = ['general', 'error'];
+const sections = ['general', 'error', 'forms'];
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
@@ -23,11 +23,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
       temp.fallback = {
         ...temp.fallback,
-        ...(
-          await import(
-            `../../messages/${routing.defaultLocale}/${sections[i]}.json`
-          )
-        ).default,
+        ...(await import(`../../messages/en-US/${sections[i]}.json`)).default,
       };
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {

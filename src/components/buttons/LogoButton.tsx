@@ -1,0 +1,17 @@
+import Image from 'next/image';
+import { FC } from 'react';
+import Logo from '../../../public/icons/logo.svg';
+import { BaseBottomPropTypes } from './types';
+
+export const LogoButton: FC<BaseBottomPropTypes> = ({ onClick, text }) => {
+  return (
+    <button
+      id="logo-button"
+      onClick={onClick}
+      className="rounded-full flex items-baseline py-3 px-4 pt-4 bg-[#E3EBED] bg-opacity-90 mr-2 min-w-24"
+    >
+      <Image alt="nitec_logo" width={20} height={20} src={Logo} />
+      <p className="ml-1">{text}</p>
+    </button>
+  );
+};
