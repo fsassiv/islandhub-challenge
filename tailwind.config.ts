@@ -16,6 +16,9 @@ const config: Config = {
         tablet: '641px',
         desktop: '1025px',
       },
+      fontFamily: {
+        sans: ['var(--font-hanken-grotesk-sans)', 'sans-serif'],
+      },
     },
   },
   plugins: [],

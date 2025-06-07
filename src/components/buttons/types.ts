@@ -10,3 +10,7 @@ export type IconButtonPropTypes = BaseBottomPropTypes & {
 export type SocialLinkButtonPropTypes = BaseBottomPropTypes & {
   icon: 'twitter' | 'tiktok' | 'instagram' | 'linkedin';
 };
+
+export type CtaLinkButtonPropTypes = BaseBottomPropTypes & {
+  href: string;
+};

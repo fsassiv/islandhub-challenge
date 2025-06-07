@@ -1,15 +1,18 @@
-// import { useTranslations } from 'next-intl';
-
 import { Carousel } from '@/components/carousel/Carousel';
+import { SlideTypes } from '@/types/common';
+import { handleHttpPromise } from '@/utils';
+import axios from 'axios';
 
-export default function Home() {
-  // const t = useTranslations('general.greeting');
+export default async function Home() {
+  const [error, data] = await handleHttpPromise<{ slides: SlideTypes[] }>(
+    axios.get('http://localhost:3000/api/slides'),
+  );
 
   return (
     <div className="flex flex-col gap-4 mt-4 desktop:flex-row">
       <div className="flex flex-col w-full gap-4 desktop:w-[70%]">
-        <div className="col-span-full tablet:row-[1/6] desktop:col-[1/6] desktop:row-[1/6]">
-          <Carousel />
+        <div className="max-tablet:h-[50vh]">
+          {error ? null : <Carousel data={data?.slides} />}
         </div>
         <div className="flex flex-wrap gap-4 justify-between">
           <div className="tablet:w-[57%] desktop:w-[35%] bg-white">

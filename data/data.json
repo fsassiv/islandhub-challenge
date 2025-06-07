@@ -1,0 +1,22 @@
+{
+  "slides": [
+    {
+      "id": "slide_one",
+      "index": "index",
+      "title": "title",
+      "sub_title": "sub_title",
+      "description": "description",
+      "cta_btn_label": "cta_btn_label",
+      "img_url": "/images/headphone.png"
+    },
+    {
+      "id": "slide_two",
+      "index": "index",
+      "title": "title",
+      "sub_title": "sub_title",
+      "description": "description",
+      "cta_btn_label": "cta_btn_label",
+      "img_url": "/images/headphone.png"
+    }
+  ]
+}

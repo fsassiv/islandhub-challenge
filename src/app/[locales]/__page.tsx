@@ -1,10 +1,8 @@
-import { Carousel } from '@/components/carousel/Carousel';
-
 export default function Home() {
   return (
     <div className="grid grid-cols-7 grid-rows-12 desktop:grid-rows-8 gap-4 pt-4">
       <div className="col-span-full tablet:row-[1/6] desktop:col-[1/6] desktop:row-[1/6]">
-        <Carousel />
+        {/* <Carousel /> */}
       </div>
       <div className="col-span-full tablet:col-[1/5] tablet:row-[6/7] desktop:col-[1/3] desktop:row-[6/8] bg-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente

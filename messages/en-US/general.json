@@ -6,7 +6,25 @@
     "company_name": "nitec.",
     "carousel": {
       "follow_us_on": "Follow us on:",
-      "music_is_classic": "Music is classic"
+      "music_is_classic": "Music is classic",
+      "slide_one": {
+        "id": 1,
+        "index": "01",
+        "title": "Sequoia Inspiring Musico.",
+        "sub_title": "Clear Sounds",
+        "description": "Making your dream music come true stay with Sequios Sounds!",
+        "cta_btn_label": "View All Products",
+        "img_url": "/images/headphone.png"
+      },
+      "slide_two": {
+        "id": 2,
+        "index": "02",
+        "title": "Sequoia Inspiring Musico.",
+        "sub_title": "Clear Sounds",
+        "description": "Making your dream music come true stay with Sequios Sounds!",
+        "cta_btn_label": "View All Products",
+        "img_url": "/images/headphone.png"
+      }
     }
   }
 }

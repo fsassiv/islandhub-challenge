@@ -16,6 +16,12 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
+const hankenGrotesk = localFont({
+  src: './fonts/HankenGrotesk-VariableFont_wght.ttf',
+  variable: '--font-hanken-grotesk-sans',
+  weight: '100 900',
+});
+
 export const metadata: Metadata = {
   title: 'Island Hub - Flavio',
 };
@@ -32,7 +38,7 @@ export default async function RootLayout({
   return (
     <html lang="en-US">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased py-4 px-6 tablet:py-8 tablet:px-10 min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hankenGrotesk.variable} antialiased py-4 px-6 tablet:py-8 tablet:px-10 min-h-screen`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
