@@ -1,9 +1,8 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { IconButton } from '../buttons/IconButton';
-import { LogoButton } from '../buttons/LogoButton';
-import { UserBadgeButton } from '../buttons/UserBadgeButton';
-import { SearchBar } from '../search_bar/SearchBar';
+import { IconButton, LogoButton, UserBadgeButton } from '../buttons';
+
+import { SearchBar } from '../search_bar';
 
 export function Header() {
   const t_general = useTranslations('general');
@@ -16,7 +15,7 @@ export function Header() {
   return (
     <header
       id="app-header"
-      className="rounded-full tablet:bg-white tablet:bg-opacity-50 h-auto p-2 flex flex-col tablet:flex-row tablet:justify-between"
+      className="rounded-full tablet:bg-white tablet:bg-opacity-60 h-auto p-2 flex flex-col tablet:flex-row tablet:justify-between"
     >
       <div className="flex max-tablet:mb-2">
         <LogoButton

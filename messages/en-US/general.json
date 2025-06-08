@@ -11,7 +11,7 @@
         "id": 1,
         "index": "01",
         "title": "Sequoia Inspiring Musico.",
-        "sub_title": "Clear Sounds",
+        "subtitle": "Clear Sounds",
         "description": "Making your dream music come true stay with Sequios Sounds!",
         "cta_btn_label": "View All Products",
         "img_url": "/images/headphone.png"
@@ -20,10 +20,18 @@
         "id": 2,
         "index": "02",
         "title": "Sequoia Inspiring Musico.",
-        "sub_title": "Clear Sounds",
+        "subtitle": "Clear Sounds",
         "description": "Making your dream music come true stay with Sequios Sounds!",
         "cta_btn_label": "View All Products",
         "img_url": "/images/headphone.png"
+      }
+    },
+    "cards": {
+      "popular_colors": { "title": "Popular Colors" },
+      "x_buds": { "title": "New Gen X-Bud" },
+      "vision": {
+        "title": "Light Gray Surface Headphone",
+        "subtitle": " Boosted with bass"
       }
     }
   }

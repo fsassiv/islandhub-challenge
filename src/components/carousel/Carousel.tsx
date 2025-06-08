@@ -35,19 +35,19 @@ export const Carousel: FC<CarouselPropTypes> = ({ data }) => {
       naturalSlideHeight={getNaturalSlideHeight()}
       totalSlides={data?.length || 0}
       infinite={true}
-      // isPlaying={true}
+      isPlaying={true}
       className="relative h-full"
     >
-      <Slider className="rounded-3xl overflow-hidden h-full">
+      <Slider className="rounded-3xl h-full shadow-xs shadow-black-100">
         {data?.map((item) => (
           <CarouselSlide key={item.id} index={item.index} data={item} />
         ))}
       </Slider>
       <div className="absolute w-full tablet:w-[50px] tablet:bg-white rounded-full p-3 right-[50%] translate-x-[50%] bottom-16 tablet:right-[20%] tablet:bottom-8 tablet:aspect-square flex justify-center items-center max-tablet:flex max-tablet:justify-between">
-        <ButtonBack id="carousel_back_btn">
+        <ButtonBack id="carousel-back-btn">
           <Image alt="back" width={10} height={10} src={BackIcon} />
         </ButtonBack>
-        <ButtonNext id="carousel_next_btn">
+        <ButtonNext id="carousel-next-btn">
           <Image alt="back" width={10} height={10} src={RightIcon} />
         </ButtonNext>
       </div>

@@ -4,7 +4,7 @@
       "id": "slide_one",
       "index": "index",
       "title": "title",
-      "sub_title": "sub_title",
+      "subtitle": "subtitle",
       "description": "description",
       "cta_btn_label": "cta_btn_label",
       "img_url": "/images/headphone.png"
@@ -13,10 +13,92 @@
       "id": "slide_two",
       "index": "index",
       "title": "title",
-      "sub_title": "sub_title",
+      "subtitle": "subtitle",
       "description": "description",
       "cta_btn_label": "cta_btn_label",
       "img_url": "/images/headphone.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Yamaha Acoustic Guitar F310",
+      "category": "Instruments",
+      "price": 149.99,
+      "stock": 12,
+      "description": "A full-size dreadnought acoustic guitar with a rich tone and excellent build quality."
+    },
+    {
+      "id": 2,
+      "name": "Roland FP-10 Digital Piano",
+      "category": "Instruments",
+      "price": 499.99,
+      "stock": 5,
+      "description": "Compact and affordable digital piano with authentic feel and Bluetooth MIDI."
+    },
+    {
+      "id": 3,
+      "name": "Shure SM58 Microphone",
+      "category": "Audio Equipment",
+      "price": 99.0,
+      "stock": 20,
+      "description": "Legendary dynamic vocal mic known for its clarity and durability."
+    },
+    {
+      "id": 4,
+      "name": "Sony WH-1000XM5 Headphones",
+      "category": "Audio Equipment",
+      "price": 348.0,
+      "stock": 8,
+      "description": "Industry-leading noise-canceling headphones with superb sound quality."
+    },
+    {
+      "id": 5,
+      "name": "Ableton Live 11 Standard",
+      "category": "Software",
+      "price": 449.0,
+      "stock": 30,
+      "description": "Music production software for recording, editing, and live performance."
+    },
+    {
+      "id": 6,
+      "name": "Fender Mustang LT25 Amp",
+      "category": "Amplifiers",
+      "price": 179.99,
+      "stock": 7,
+      "description": "Compact and versatile guitar amp with 25 watts and onboard effects."
+    },
+    {
+      "id": 7,
+      "name": "Focusrite Scarlett 2i2 (3rd Gen)",
+      "category": "Audio Interfaces",
+      "price": 169.99,
+      "stock": 15,
+      "description": "Best-selling USB audio interface for musicians and content creators."
+    },
+    {
+      "id": 8,
+      "name": "Ernie Ball Regular Slinky Guitar Strings",
+      "category": "Accessories",
+      "price": 6.99,
+      "stock": 50,
+      "description": "Nickel wound electric guitar strings for balanced tone and playability."
+    },
+    {
+      "id": 9,
+      "name": "Korg Volca Beats Analog Drum Machine",
+      "category": "Synthesizers",
+      "price": 149.99,
+      "stock": 10,
+      "description": "Compact drum machine with analog sounds and intuitive sequencing."
+    },
+    {
+      "id": 10,
+      "name": "Audio-Technica AT2020 Studio Mic",
+      "category": "Microphones",
+      "price": 99.99,
+      "stock": 18,
+      "description": "Cardioid condenser microphone ideal for home studio recording."
     }
   ]
 }

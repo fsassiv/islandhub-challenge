@@ -12,7 +12,7 @@ export const SocialLinkButton: FC<SocialLinkButtonPropTypes> = ({ icon }) => {
     alt: `social_icon_${icon}`,
     width: 20,
     height: 20,
-    socialLink: {
+    'social-link': {
       twitter: 'https://x.com/home',
       tiktok: 'https://www.tiktok.com/',
       instagram: 'https://www.instagram.com/',
@@ -23,7 +23,7 @@ export const SocialLinkButton: FC<SocialLinkButtonPropTypes> = ({ icon }) => {
   return (
     <a
       id="icon-button"
-      href={common?.socialLink[icon]}
+      href={common?.['social-link'][icon]}
       target="_blank"
       className="rounded-full w-10 aspect-square bg-white flex justify-center items-center mr-2"
     >

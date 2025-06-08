@@ -1,5 +1,4 @@
 'use client';
-
 import SearchIcon from '@/public/icons/search-status-svgrepo-com.svg';
 import Image from 'next/image';
 import { FC, KeyboardEventHandler, useState } from 'react';

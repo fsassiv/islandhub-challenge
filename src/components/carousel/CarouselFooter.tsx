@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { SocialLinkButton } from '../buttons/SocialLinkButton';
+import { SocialLinkButton } from '../buttons';
 import { LabelPropTypes } from './types';
 
 export const CarouselFooter: FC<LabelPropTypes> = ({ label }) => {

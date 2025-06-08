@@ -11,9 +11,9 @@ export const CarouselSlide: FC<CarouselSlidePropTypes> = ({ index, data }) => {
 
   return (
     <Slide index={index} className="h-full">
-      <div className="rounded-3xl bg-white bg-opacity-50 h-full p-8 flex items-center justify-between flex-wrap font-sans">
-        <div className="flex flex-col w-2/3 h-full justify-center">
-          <h1 className="font-bold text-5xl desktop:w-2/3 mb-4">
+      <div className="rounded-3xl bg-white bg-opacity-60 h-full p-8 flex items-center justify-between flex-wrap font-sans relative">
+        <div className="relative flex flex-col tablet:w-2/3 h-full items-start tablet:justify-center max-tablet:pt-[12%] max-tablet:z-10">
+          <h1 className="font-bold text-5xl  mb-4 desktop:w-2/3">
             {t_general(`carousel.${data.id}.title`)}
           </h1>
           <div className="flex items-center mb-4">
@@ -34,7 +34,7 @@ export const CarouselSlide: FC<CarouselSlidePropTypes> = ({ index, data }) => {
             </div>
             <div className="flex flex-col w-2/3">
               <h4 className="text-lg">
-                {t_general(`carousel.${data.id}.sub_title`)}
+                {t_general(`carousel.${data.id}.subtitle`)}
               </h4>
               <p className="font-light">
                 {t_general(`carousel.${data.id}.description`)}
@@ -47,7 +47,7 @@ export const CarouselSlide: FC<CarouselSlidePropTypes> = ({ index, data }) => {
           />
         </div>
         <div
-          className="flex justify-center items-center w-1/3"
+          className="flex justify-center items-center w-full tablet:w-1/3 max-tablet:absolute max-tablet:opacity-90"
           style={{
             background: 'radial-gradient(circle, #C3DED1 0%, transparent 75%)',
           }}
