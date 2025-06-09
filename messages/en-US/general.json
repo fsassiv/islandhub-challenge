@@ -24,6 +24,15 @@
         "description": "Making your dream music come true stay with Sequios Sounds!",
         "cta_btn_label": "View All Products",
         "img_url": "/images/headphone.png"
+      },
+      "slide_three": {
+        "id": 3,
+        "index": "03",
+        "title": "Sequoia Inspiring Musico.",
+        "subtitle": "Clear Sounds",
+        "description": "Making your dream music come true stay with Sequios Sounds!",
+        "cta_btn_label": "View All Products",
+        "img_url": "/images/headphone.png"
       }
     },
     "cards": {
@@ -32,6 +41,14 @@
       "vision": {
         "title": "Light Gray Surface Headphone",
         "subtitle": " Boosted with bass"
+      },
+      "more_products": {
+        "title": "More products",
+        "qty_plus_items": "{qty} plus items."
+      },
+      "info": {
+        "downloads": "Downloads",
+        "reviews": "{qty} reviews"
       }
     }
   }

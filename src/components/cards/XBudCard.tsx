@@ -10,7 +10,7 @@ export const XBudCard = () => {
 
   return (
     <CardBase>
-      <div className="flex p-4 h-[180px]">
+      <div className="flex p-4 h-[180px] tablet:max-desktop:h-[280px] w-full">
         <h4 className="mb-2 w-2/3 font-bold">{t_cards('x_buds.title')}</h4>
         <Image
           alt="x-bud"

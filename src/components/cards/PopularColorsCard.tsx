@@ -8,7 +8,7 @@ export const PopularColorsCard = () => {
 
   return (
     <CardBase>
-      <div className="flex flex-col p-4">
+      <div className="flex flex-col p-4 w-full">
         <h4 className="mb-2">{t_cards('popular_colors.title')}</h4>
         <ul className="flex">
           {COLORS.map((color) => (

@@ -5,6 +5,7 @@ export type BaseBottomPropTypes = {
 
 export type IconButtonPropTypes = BaseBottomPropTypes & {
   icon: 'heart' | 'bag';
+  additionalClasses?: string;
 };
 
 export type SocialLinkButtonPropTypes = BaseBottomPropTypes & {

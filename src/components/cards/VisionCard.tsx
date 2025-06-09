@@ -15,8 +15,8 @@ export const VisionCard = () => {
           backgroundImage: `linear-gradient(to bottom, #E1EBEC, #ffffff `,
         }}
       >
-        <h4 className="mb-2 w-2/3 font-bold">{t_cards('vision.title')}</h4>
-        <p>{t_cards('vision.subtitle')}</p>
+        <h4 className="mb-1 w-2/3 font-bold">{t_cards('vision.title')}</h4>
+        <p className="font-light text-xs">{t_cards('vision.subtitle')}</p>
         <Image
           alt="vision"
           width={100}

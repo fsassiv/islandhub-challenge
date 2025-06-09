@@ -17,6 +17,15 @@
       "description": "description",
       "cta_btn_label": "cta_btn_label",
       "img_url": "/images/headphone.png"
+    },
+    {
+      "id": "slide_three",
+      "index": "index",
+      "title": "title",
+      "subtitle": "subtitle",
+      "description": "description",
+      "cta_btn_label": "cta_btn_label",
+      "img_url": "/images/headphone.png"
     }
   ],
   "products": [
@@ -26,7 +35,8 @@
       "category": "Instruments",
       "price": 149.99,
       "stock": 12,
-      "description": "A full-size dreadnought acoustic guitar with a rich tone and excellent build quality."
+      "description": "A full-size dreadnought acoustic guitar with a rich tone and excellent build quality.",
+      "img_name": "chuck"
     },
     {
       "id": 2,
@@ -34,7 +44,8 @@
       "category": "Instruments",
       "price": 499.99,
       "stock": 5,
-      "description": "Compact and affordable digital piano with authentic feel and Bluetooth MIDI."
+      "description": "Compact and affordable digital piano with authentic feel and Bluetooth MIDI.",
+      "img_name": "cottonbro"
     },
     {
       "id": 3,
@@ -42,7 +53,8 @@
       "category": "Audio Equipment",
       "price": 99.0,
       "stock": 20,
-      "description": "Legendary dynamic vocal mic known for its clarity and durability."
+      "description": "Legendary dynamic vocal mic known for its clarity and durability.",
+      "img_name": "michelangelo-buonarroti"
     },
     {
       "id": 4,
@@ -100,5 +112,6 @@
       "stock": 18,
       "description": "Cardioid condenser microphone ideal for home studio recording."
     }
-  ]
+  ],
+  "reviews_count": 4.6651
 }

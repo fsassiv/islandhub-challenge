@@ -4,12 +4,16 @@ import Image from 'next/image';
 import { FC } from 'react';
 import { IconButtonPropTypes } from './types';
 
-export const IconButton: FC<IconButtonPropTypes> = ({ onClick, icon }) => {
+export const IconButton: FC<IconButtonPropTypes> = ({
+  onClick,
+  icon,
+  additionalClasses,
+}) => {
   return (
     <button
       id="icon-button"
       onClick={onClick}
-      className="rounded-full w-14 aspect-square bg-white flex justify-center items-center mr-2"
+      className={`rounded-full  w-14 aspect-square bg-white flex justify-center items-center mr-2 ${additionalClasses}`}
     >
       <Image
         alt={`icon_${icon}`}
