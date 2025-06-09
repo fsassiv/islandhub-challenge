@@ -11,7 +11,7 @@ export const CarouselSlide: FC<CarouselSlidePropTypes> = ({ index, data }) => {
 
   return (
     <Slide index={index} className="h-full">
-      <div className="rounded-3xl bg-white bg-opacity-60 h-full p-8 flex items-center justify-between flex-wrap font-sans relative">
+      <div className="rounded-3xl bg-white bg-opacity-60 h-full p-8 flex items-center justify-between flex-wrap font-sans relative desktop:h-[55vh]">
         <div className="relative flex flex-col tablet:w-2/3 h-full items-start tablet:justify-center max-tablet:pt-[12%] max-tablet:z-10">
           <h1 className="font-bold text-5xl  mb-4 desktop:w-2/3">
             {t_general(`carousel.${data.id}.title`)}

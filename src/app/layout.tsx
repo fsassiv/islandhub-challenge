@@ -1,4 +1,5 @@
 import { Header } from '@/components/header';
+import { SideBar } from '@/components/sidebar/SideBar';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -43,7 +44,10 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="container mx-auto">
             <Header />
-            {children}
+            <div className="flex flex-col gap-4 mt-4 desktop:flex-row">
+              {children}
+              <SideBar />
+            </div>
           </div>
         </NextIntlClientProvider>
       </body>
