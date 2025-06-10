@@ -4,17 +4,18 @@ import Image from 'next/image';
 import { FC, KeyboardEventHandler, useState } from 'react';
 import { SearchBarPropTypes } from './types';
 
-export const SearchBar: FC<SearchBarPropTypes> = ({
-  inputPlaceholder,
-  onSearch,
-}) => {
+export const SearchBar: FC<SearchBarPropTypes> = ({ inputPlaceholder }) => {
   const [text, setText] = useState('');
+
+  const onSearch = () => {
+    console.log(text);
+  };
 
   const handleOnKeyDown: KeyboardEventHandler<HTMLInputElement> | undefined = ({
     key,
   }) => {
     if (key === 'Enter') {
-      onSearch(text);
+      onSearch();
     }
   };
 
@@ -31,7 +32,7 @@ export const SearchBar: FC<SearchBarPropTypes> = ({
       <button
         id="search-bar-button"
         className="rounded-full bg-foreground p-3 absolute right-1 top-[50%] translate-y-[-50%]"
-        onClick={() => onSearch(text)}
+        onClick={() => onSearch()}
       >
         <Image
           alt="search_icon"

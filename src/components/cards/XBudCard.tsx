@@ -22,7 +22,7 @@ export const XBudCard = () => {
         <Link
           id="x-bud-card-btn"
           className="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center absolute bottom-4 left-4"
-          href={''}
+          href="/products/x-bud"
         >
           <Image
             alt="arrow-up-right"

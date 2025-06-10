@@ -4,7 +4,7 @@ export type BaseBottomPropTypes = {
 };
 
 export type IconButtonPropTypes = BaseBottomPropTypes & {
-  icon: 'heart' | 'bag';
+  icon: 'favorites' | 'cart';
   additionalClasses?: string;
 };
 

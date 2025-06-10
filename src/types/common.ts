@@ -6,6 +6,7 @@ export type SlideTypes = {
   description: string;
   cta_btn_label: string;
   img_url: string;
+  href: string;
 };
 
 export type ProductTypes = {

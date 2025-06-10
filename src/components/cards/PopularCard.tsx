@@ -47,7 +47,7 @@ export const PopularCard: FC<PopularCardPropTypes> = ({ popular_ratins }) => {
         <Link
           id="x-bud-card-link-btn"
           className="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center absolute top-4 right-4 z-10"
-          href={''}
+          href="/popular-songs"
         >
           <Image
             alt="arrow-up-right"

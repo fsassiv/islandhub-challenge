@@ -42,7 +42,7 @@ export const CarouselSlide: FC<CarouselSlidePropTypes> = ({ index, data }) => {
             </div>
           </div>
           <CtaLinkButton
-            href="/"
+            href={data.href}
             text={t_general(`carousel.${data.id}.cta_btn_label`)}
           />
         </div>

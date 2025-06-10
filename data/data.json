@@ -7,7 +7,8 @@
       "subtitle": "subtitle",
       "description": "description",
       "cta_btn_label": "cta_btn_label",
-      "img_url": "/images/headphone.png"
+      "img_url": "/images/headphone.png",
+      "href": "/products"
     },
     {
       "id": "slide_two",
@@ -16,7 +17,8 @@
       "subtitle": "subtitle",
       "description": "description",
       "cta_btn_label": "cta_btn_label",
-      "img_url": "/images/headphone.png"
+      "img_url": "/images/headphone.png",
+      "href": "/products"
     },
     {
       "id": "slide_three",
@@ -25,7 +27,8 @@
       "subtitle": "subtitle",
       "description": "description",
       "cta_btn_label": "cta_btn_label",
-      "img_url": "/images/headphone.png"
+      "img_url": "/images/headphone.png",
+      "href": "/products"
     }
   ],
   "products": [

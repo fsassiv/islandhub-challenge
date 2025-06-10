@@ -7,6 +7,7 @@ import { BaseCard } from './BaseCard';
 
 export const VisionCard = () => {
   const t_cards = useTranslations('cards');
+
   return (
     <BaseCard>
       <div
@@ -27,7 +28,7 @@ export const VisionCard = () => {
         <Link
           id="x-bud-card-link-btn"
           className="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center absolute top-4 right-4"
-          href={''}
+          href="/products/vision"
         >
           <Image
             alt="arrow-up-right"
