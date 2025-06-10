@@ -27,7 +27,7 @@ export default async function Home() {
 
   return (
     <main className="flex flex-col w-full gap-4 desktop:w-[75%] desktop:justify-between">
-      <div className="max-tablet:h-[50vh] desktop:h-[55vh] xl:h-[70vh]">
+      <div className="max-tablet:h-[50vh] desktop:h-[55vh]">
         {errorSlides ? null : <Carousel data={slides || []} />}
       </div>
       <div className="flex flex-wrap gap-4 justify-center tablet:justify-between">
