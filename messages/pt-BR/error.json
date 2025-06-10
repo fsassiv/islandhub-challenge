@@ -1,7 +1,9 @@
 {
   "error": {
     "notFound": {
-      "title": "Página Não Encontrada"
+      "title": "Página Não Encontrada",
+      "description": "A página que você está procurando não existe.",
+      "backToHome": "Voltar para a Home"
     }
   }
 }

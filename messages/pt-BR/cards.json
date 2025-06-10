@@ -1,0 +1,22 @@
+{
+  "cards": {
+    "popular_colors": { "title": "Cores Populares" },
+    "x_buds": { "title": "Nova Geração X-Bud" },
+    "vision": {
+      "title": "Fone de Ouvido Surface Cinza Claro",
+      "subtitle": " Impulsionado com graves"
+    },
+    "more_products": {
+      "title": "Mais produtos",
+      "qty_plus_items": "{qty} itens ou mais."
+    },
+    "info": {
+      "downloads": "Downloads",
+      "reviews": "{qty} avaliações"
+    },
+    "popular": {
+      "title": "A Escuta Foi Lançada",
+      "badge_title": "Popular"
+    }
+  }
+}

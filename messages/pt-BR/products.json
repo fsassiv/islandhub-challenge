@@ -1,0 +1,9 @@
+{
+  "products": {
+    "more_details": "Mais detalhes",
+    "no_products": "Nenhum produto",
+    "out_of_stock": "Fora de estoque",
+    "available": "Disponível",
+    "add_to_cart": "Adicionar ao Carrinho"
+  }
+}
