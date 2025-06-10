@@ -22,4 +22,5 @@ export type DataResponseTypes = {
   products: ProductTypes[];
   slides: SlideTypes[];
   reviews_count: number;
+  popular_ratins: number;
 };

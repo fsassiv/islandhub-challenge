@@ -1,9 +1,10 @@
 import { ProductTypes } from '@/types/common';
 import { ReactNode } from 'react';
 
-export type CardBasePropTypes = {
+export type BaseCardPropTypes = {
   children: ReactNode;
   isFullHeight?: boolean;
+  isFullWidth?: boolean;
 };
 
 export type MoreProductsCardPropTypes = {
@@ -12,4 +13,8 @@ export type MoreProductsCardPropTypes = {
 
 export type InfoCardPropTypes = {
   reviews_count: number;
+};
+
+export type PopularCardPropTypes = {
+  popular_ratins: number;
 };

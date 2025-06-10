@@ -1,14 +1,14 @@
-'use client';
 import ArrowUpRightIcon from '@/public/icons/arrow-up-right-svgrepo-com.svg';
 import VisionImage from '@/public/images/lady-okulos.png';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { CardBase } from './CardBase';
+import Link from 'next/link';
+import { BaseCard } from './BaseCard';
 
 export const VisionCard = () => {
-  const t_cards = useTranslations('general.cards');
+  const t_cards = useTranslations('cards');
   return (
-    <CardBase>
+    <BaseCard>
       <div
         className="flex flex-col justify-end h-[400px] w-full p-4"
         style={{
@@ -24,10 +24,10 @@ export const VisionCard = () => {
           src={VisionImage}
           className="absolute bottom-[20%] right-0 h-auto w-3/4 tablet:max-w-[260px]"
         />
-        <button
-          id="x-bud-card-btn"
+        <Link
+          id="x-bud-card-link-btn"
           className="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center absolute top-4 right-4"
-          onClick={() => console.log('add click event')}
+          href={''}
         >
           <Image
             alt="arrow-up-right"
@@ -35,8 +35,8 @@ export const VisionCard = () => {
             height={30}
             src={ArrowUpRightIcon}
           />
-        </button>
+        </Link>
       </div>
-    </CardBase>
+    </BaseCard>
   );
 };

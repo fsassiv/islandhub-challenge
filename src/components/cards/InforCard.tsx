@@ -3,15 +3,15 @@ import { convertToNominal } from '@/utils/general';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { FC } from 'react';
-import { CardBase } from './CardBase';
+import { BaseCard } from './BaseCard';
 import { InfoCardPropTypes } from './types';
 import { AVATARS } from './utils';
 
 export const InforCard: FC<InfoCardPropTypes> = ({ reviews_count }) => {
-  const t_cards = useTranslations('general.cards');
+  const t_cards = useTranslations('cards');
 
   return (
-    <CardBase isFullHeight={true}>
+    <BaseCard isFullHeight={true}>
       <div className="flex items-center justify-center p-4 w-full">
         <ul className="flex absolute top-4">
           {AVATARS.map((item, index) => (
@@ -46,6 +46,6 @@ export const InforCard: FC<InfoCardPropTypes> = ({ reviews_count }) => {
           </p>
         </span>
       </div>
-    </CardBase>
+    </BaseCard>
   );
 };

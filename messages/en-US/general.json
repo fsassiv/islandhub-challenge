@@ -34,22 +34,6 @@
         "cta_btn_label": "View All Products",
         "img_url": "/images/headphone.png"
       }
-    },
-    "cards": {
-      "popular_colors": { "title": "Popular Colors" },
-      "x_buds": { "title": "New Gen X-Bud" },
-      "vision": {
-        "title": "Light Gray Surface Headphone",
-        "subtitle": " Boosted with bass"
-      },
-      "more_products": {
-        "title": "More products",
-        "qty_plus_items": "{qty} plus items."
-      },
-      "info": {
-        "downloads": "Downloads",
-        "reviews": "{qty} reviews"
-      }
     }
   }
 }

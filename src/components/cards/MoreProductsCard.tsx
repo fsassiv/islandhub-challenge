@@ -4,16 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 import { IconButton } from '../buttons';
-import { CardBase } from './CardBase';
+import { BaseCard } from './BaseCard';
 import { MoreProductsCardPropTypes } from './types';
 
 export const MoreProductsCard: FC<MoreProductsCardPropTypes> = ({
   products,
 }) => {
-  const t_cards = useTranslations('general.cards');
+  const t_cards = useTranslations('cards');
 
   return (
-    <CardBase isFullHeight={true}>
+    <BaseCard isFullHeight={true}>
       <div className="flex flex-col justify-between p-4 relative w-full">
         <div className="flex flex-col mb-6">
           <h4 className="mb-1 w-2/3 font-bold">
@@ -48,6 +48,6 @@ export const MoreProductsCard: FC<MoreProductsCardPropTypes> = ({
           ))}
         </ul>
       </div>
-    </CardBase>
+    </BaseCard>
   );
 };

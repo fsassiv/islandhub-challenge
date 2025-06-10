@@ -1,4 +1,4 @@
-import { InforCard, MoreProductsCard } from '@/components/cards';
+import { InforCard, MoreProductsCard, PopularCard } from '@/components/cards';
 import { Carousel } from '@/components/carousel';
 import { DataResponseTypes } from '@/types/common';
 import { handleHttpPromise } from '@/utils';
@@ -21,11 +21,8 @@ export default async function Home() {
         <div className="w-1/2 tablet:w-[40%] desktop:w-[20%]">
           <InforCard reviews_count={data?.reviews_count || 0} />
         </div>
-        <div className="tablet:w-full desktop:w-[40%]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
-          aspernatur saepe praesentium earum, fugiat deleniti quam voluptatem
-          illo soluta optio, ea ipsa maxime eveniet ut dolorum. Non repellendus
-          reprehenderit magnam.
+        <div className="w-full desktop:w-[40%]">
+          <PopularCard popular_ratins={data?.popular_ratins || 0} />
         </div>
       </div>
     </main>

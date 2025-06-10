@@ -1,13 +1,13 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { CardBase } from './CardBase';
+import { BaseCard } from './BaseCard';
 import { COLORS } from './utils';
 
 export const PopularColorsCard = () => {
-  const t_cards = useTranslations('general.cards');
+  const t_cards = useTranslations('cards');
 
   return (
-    <CardBase>
+    <BaseCard>
       <div className="flex flex-col p-4 w-full">
         <h4 className="mb-2">{t_cards('popular_colors.title')}</h4>
         <ul className="flex">
@@ -25,6 +25,6 @@ export const PopularColorsCard = () => {
           ))}
         </ul>
       </div>
-    </CardBase>
+    </BaseCard>
   );
 };

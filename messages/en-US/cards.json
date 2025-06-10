@@ -1,0 +1,22 @@
+{
+  "cards": {
+    "popular_colors": { "title": "Popular Colors" },
+    "x_buds": { "title": "New Gen X-Bud" },
+    "vision": {
+      "title": "Light Gray Surface Headphone",
+      "subtitle": " Boosted with bass"
+    },
+    "more_products": {
+      "title": "More products",
+      "qty_plus_items": "{qty} plus items."
+    },
+    "info": {
+      "downloads": "Downloads",
+      "reviews": "{qty} reviews"
+    },
+    "popular": {
+      "title": "Listening has Been Released",
+      "badge_title": "Popular"
+    }
+  }
+}
