@@ -18,10 +18,3 @@ export type ProductTypes = {
   description: string;
   img_name: string;
 };
-
-export type DataResponseTypes = {
-  products: ProductTypes[];
-  slides: SlideTypes[];
-  reviews_count: number;
-  popular_ratins: number;
-};

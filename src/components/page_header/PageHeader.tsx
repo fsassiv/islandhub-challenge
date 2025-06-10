@@ -2,22 +2,32 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useCallback } from 'react';
 
 export const PageHeader = () => {
   const pathname = usePathname();
 
-  const generatePageHeader = () => {
+  const generatePageHeader = useCallback(() => {
     const paths = pathname.split('/');
 
+    if (paths.length > 2) {
+      paths.pop();
+    }
     paths.shift();
-    paths.pop();
 
     return paths?.map((item) => (
-      <Link key={item} href={`/${item}`} className="mr-2 text-lg font-bold">
-        {`${item} /`}
+      <Link
+        id="page-title-link-btn"
+        key={item}
+        href={`/${item}`}
+        className="mr-2 text-lg px-4"
+      >
+        {`/ ${item}`}
       </Link>
     ));
-  };
+  }, [pathname]);
 
-  return <div className="w-full">{generatePageHeader()}</div>;
+  return (
+    <div className="w-full mb-4 text-gray-600">{generatePageHeader()}</div>
+  );
 };

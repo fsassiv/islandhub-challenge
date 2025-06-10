@@ -1,9 +1,17 @@
+import { Loading } from '@/components/loading';
+import dynamic from 'next/dynamic';
+
+const ProductsList = dynamic(
+  () =>
+    import('@/features/products/components/products_list').then(
+      (mod) => mod.ProductsList,
+    ),
+  {
+    ssr: false,
+    loading: () => <Loading />,
+  },
+);
+
 export default async function Products() {
-  return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis
-      atque id, at quo reiciendis suscipit modi hic cupiditate sed voluptatum,
-      nesciunt animi cumque distinctio repellat eligendi ratione aliquid quasi!
-    </div>
-  );
+  return <ProductsList />;
 }

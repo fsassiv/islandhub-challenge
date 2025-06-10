@@ -14,3 +14,7 @@ export const convertToNominal = (n: number): string => {
   }
   return n.toString();
 };
+
+export const toCurrency = (value: number, locale: string = 'en-US'): string => {
+  return new Intl.NumberFormat(locale).format(value);
+};
