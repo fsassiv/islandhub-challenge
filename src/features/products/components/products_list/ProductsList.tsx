@@ -29,7 +29,22 @@ export const ProductsList = () => {
   useEffect(() => {
     const filterByCategory = async () => {
       const category = searchParams.get('category');
+      const search = searchParams.get('search');
+
       const data = await getProducts();
+
+      if (search) {
+        const temp = data.filter((item) => {
+          if (item.name.includes(search) || item.description.includes(search)) {
+            return item;
+          }
+        });
+
+        console.log(temp);
+
+        setProducts(temp);
+        return;
+      }
 
       if (category) {
         const temp = data.filter((item) => item.category === category);

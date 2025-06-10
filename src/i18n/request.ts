@@ -35,8 +35,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     | AbstractIntlMessages
     | undefined;
 
-  console.log(messages);
-
   return {
     locale,
     messages,

@@ -1,8 +1,5 @@
 {
   "general": {
-    "greeting": {
-      "hello": "Hello World!"
-    },
     "company_name": "nitec.",
     "carousel": {
       "follow_us_on": "Follow us on:",

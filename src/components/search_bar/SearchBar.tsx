@@ -1,14 +1,17 @@
 'use client';
 import SearchIcon from '@/public/icons/search-status-svgrepo-com.svg';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { FC, KeyboardEventHandler, useState } from 'react';
 import { SearchBarPropTypes } from './types';
 
 export const SearchBar: FC<SearchBarPropTypes> = ({ inputPlaceholder }) => {
+  const router = useRouter();
+
   const [text, setText] = useState('');
 
   const onSearch = () => {
-    console.log(text);
+    router.push(`/products?search=${text}`);
   };
 
   const handleOnKeyDown: KeyboardEventHandler<HTMLInputElement> | undefined = ({
