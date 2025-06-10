@@ -43,12 +43,12 @@ export const Carousel: FC<CarouselPropTypes> = ({ data }) => {
           <CarouselSlide key={item.id} index={item.index} data={item} />
         ))}
       </Slider>
-      <div className="absolute w-full tablet:w-[50px] tablet:bg-white rounded-full p-3 right-[50%] translate-x-[50%] bottom-16 tablet:right-[20%] tablet:bottom-8 tablet:aspect-square flex justify-center items-center max-tablet:flex max-tablet:justify-between">
+      <div className="absolute w-full tablet:w-[50px] tablet:bg-white rounded-full p-1 right-[50%] translate-x-[50%] bottom-16 tablet:right-[20%] tablet:bottom-8 tablet:aspect-square flex justify-center items-center max-tablet:flex max-tablet:justify-between">
         <ButtonBack id="carousel-back-btn">
-          <Image alt="back" width={10} height={10} src={BackIcon} />
+          <Image alt="back" width={15} height={15} src={BackIcon} />
         </ButtonBack>
         <ButtonNext id="carousel-next-btn">
-          <Image alt="back" width={10} height={10} src={RightIcon} />
+          <Image alt="back" width={15} height={15} src={RightIcon} />
         </ButtonNext>
       </div>
       <CarouselHeader label={t_general('carousel.music_is_classic')} />
