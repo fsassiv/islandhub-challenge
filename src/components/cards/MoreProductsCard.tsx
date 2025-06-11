@@ -25,7 +25,7 @@ export const MoreProductsCard: FC<MoreProductsCardPropTypes> = ({
 
           <IconButton
             icon="favorites"
-            additionalClasses="absolute top-4 right-4 w-[30px] h-[30px] mr-0 bg-slate-200"
+            additionalClasses="!absolute !top-4 !right-4 !w-[30px] !h-[30px] !mr-0 !bg-slate-200"
           />
         </div>
         <ul className="flex justify-between">

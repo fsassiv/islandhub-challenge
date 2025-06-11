@@ -1,5 +1,9 @@
 {
   "cart": {
-    "my_cart": "My Cart"
+    "my_cart": "Meu Carrinho",
+    "name": "Nome",
+    "description": "Descrição",
+    "cart_qty": "Qtd. adicionada ao carrinho",
+    "amount": "Total"
   }
 }
