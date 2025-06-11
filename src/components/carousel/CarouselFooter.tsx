@@ -4,7 +4,7 @@ import { LabelPropTypes } from './types';
 
 export const CarouselFooter: FC<LabelPropTypes> = ({ label }) => {
   return (
-    <div className="flex items-center absolute left-8 bottom-8">
+    <div className="flex items-center max-tablet:hidden absolute left-8 bottom-8">
       <h5 className="mr-2 text-[#7D7D7D]">{label}</h5>
       <SocialLinkButton icon="twitter" />
       <SocialLinkButton icon="tiktok" />

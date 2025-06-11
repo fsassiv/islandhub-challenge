@@ -5,7 +5,7 @@ import { LabelPropTypes } from './types';
 
 export const CarouselHeader: FC<LabelPropTypes> = ({ label }) => {
   return (
-    <div className="absolute top-8 left-8 bg-white rounded-full py-2 px-4 flex items-center">
+    <div className="absolute top-4 left-4 desktop:top-8 desktop:left-8 bg-white rounded-full py-2 px-4 flex items-center">
       <Image
         className="fill-red-50"
         alt="speaker_icon"
