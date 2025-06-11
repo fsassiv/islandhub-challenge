@@ -19,6 +19,7 @@ npm run dev
 ## Estrutura de pastas
 
 ```plaintext
+| ../data - .json contendo dados consumidos pela aplicação
 | ../messages - para os dicionarios configurados para internacionalização;
 | /app;
 |    | /[locales] - rotas internationalizadas (home, products, cart);
