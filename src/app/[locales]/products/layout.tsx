@@ -1,4 +1,4 @@
-import { PageHeader } from '@/components/page_header';
+import { PageHeader } from '@/features/page/components/page_header';
 
 export default function ProductsLayout({
   children,

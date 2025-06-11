@@ -4,6 +4,7 @@
     "name": "Nome",
     "description": "Descrição",
     "cart_qty": "Qtd. adicionada ao carrinho",
-    "amount": "Total"
+    "amount": "Total",
+    "no_products": "Nenhum item foi adicionado ainda..."
   }
 }

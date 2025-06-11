@@ -3,7 +3,15 @@ import { AbstractIntlMessages, hasLocale } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
 import { routing } from './routing';
 
-const sections = ['general', 'error', 'forms', 'cards', 'products', 'cart'];
+const sections = [
+  'general',
+  'error',
+  'forms',
+  'cards',
+  'products',
+  'cart',
+  'pages',
+];
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;

@@ -4,6 +4,7 @@
     "name": "Name",
     "description": "Description",
     "cart_qty": "Qty. added to cart",
-    "amount": "Amount"
+    "amount": "Amount",
+    "no_products": "No items in the cart yet..."
   }
 }
