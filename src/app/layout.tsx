@@ -1,5 +1,6 @@
 import { Header } from '@/components/header';
 import { SideBar } from '@/components/sidebar/SideBar';
+import { CartContextWrapper } from '@/context';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -42,13 +43,15 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${hankenGrotesk.variable} antialiased py-4 px-6 tablet:py-8 tablet:px-10 min-h-screen`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="container mx-auto">
-            <Header />
-            <div className="flex flex-col gap-4 mt-4 desktop:flex-row">
-              {children}
-              <SideBar />
+          <CartContextWrapper>
+            <div className="container mx-auto">
+              <Header />
+              <div className="flex flex-col gap-4 mt-4 desktop:flex-row">
+                {children}
+                <SideBar />
+              </div>
             </div>
-          </div>
+          </CartContextWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

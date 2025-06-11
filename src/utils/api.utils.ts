@@ -1,10 +1,3 @@
-export const handlePromise = <T>(
-  promise: Promise<T>,
-): Promise<[undefined, T] | [Error]> =>
-  promise
-    .then((data) => [undefined, data] as [undefined, T])
-    .catch((error) => [error]);
-
 export const handleHttpPromise = <T>(
   promise: Promise<{ data: T }>,
 ): Promise<[undefined, T, { data: T }] | [Error]> =>

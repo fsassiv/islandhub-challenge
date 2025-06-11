@@ -1,1 +1,1 @@
-export { handleHttpPromise, handlePromise } from './api.utils';
+export { handleHttpPromise } from './api.utils';

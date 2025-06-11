@@ -1,0 +1,9 @@
+{
+  "cart": {
+    "my_cart": "My Cart",
+    "name": "Name",
+    "description": "Description",
+    "cart_qty": "Qty. added to cart",
+    "amount": "Amount"
+  }
+}

@@ -1,9 +1,13 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import { IconButton, LogoButton, UserBadgeButton } from '../buttons';
 
+import { useCartCxt } from '@/context';
 import { SearchBar } from '../search_bar';
 
 export function Header() {
+  const { cartQty } = useCartCxt();
+
   const t_general = useTranslations('general');
   const t_forms = useTranslations('forms');
 
@@ -17,7 +21,7 @@ export function Header() {
         <SearchBar inputPlaceholder={t_forms('search_products')} />
       </div>
       <div className="flex">
-        <IconButton icon="cart" />
+        <IconButton icon="cart" cartCount={cartQty} />
         <IconButton icon="favorites" />
         <UserBadgeButton />
       </div>

@@ -1,6 +1,9 @@
 {
   "cards": {
-    "popular_colors": { "title": "Cores Populares" },
+    "popular_colors": {
+      "title": "Cores Populares",
+      "toast_text": "Cor legal que você escolheu!"
+    },
     "x_buds": { "title": "Nova Geração X-Bud" },
     "vision": {
       "title": "Fone de Ouvido Surface Cinza Claro",

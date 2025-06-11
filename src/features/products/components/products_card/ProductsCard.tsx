@@ -1,3 +1,5 @@
+'use client';
+import { useCartCxt } from '@/context';
 import { toCurrency } from '@/utils/general';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -5,11 +7,13 @@ import { FC } from 'react';
 import { ProductsCardPropTypes } from './types';
 
 export const ProductsCard: FC<ProductsCardPropTypes> = ({ data }) => {
+  const { addToCart } = useCartCxt();
+
   const locale = useLocale();
   const t_products = useTranslations('products');
 
   return (
-    <div className="rounded-3xl bg-white bg-opacity-60 p-8 relative">
+    <div className="rounded-3xl bg-white bg-opacity-60 p-4 desktop:p-8 relative">
       <Link
         href={`/products?category=${data.category}`}
         className="rounded-full py-1 px-4 text-xs absolute top-8 right-8 bg-slate-200 text-gray-400"
@@ -33,6 +37,7 @@ export const ProductsCard: FC<ProductsCardPropTypes> = ({ data }) => {
           id="add-to-cart-btn"
           className={`rounded-full text-white bg-black py-4 px-6 ${!data.stock ? 'bg-opacity-25' : ''}`}
           disabled={!data.stock}
+          onClick={() => addToCart(data)}
         >
           {t_products('add_to_cart')}
         </button>

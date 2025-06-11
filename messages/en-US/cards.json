@@ -1,6 +1,9 @@
 {
   "cards": {
-    "popular_colors": { "title": "Popular Colors" },
+    "popular_colors": {
+      "title": "Popular Colors",
+      "toast_text": "Nice color you picked!"
+    },
     "x_buds": { "title": "New Gen X-Bud" },
     "vision": {
       "title": "Light Gray Surface Headphone",

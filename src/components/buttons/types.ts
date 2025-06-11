@@ -6,6 +6,7 @@ export type BaseBottomPropTypes = {
 export type IconButtonPropTypes = BaseBottomPropTypes & {
   icon: 'favorites' | 'cart';
   additionalClasses?: string;
+  cartCount?: number;
 };
 
 export type SocialLinkButtonPropTypes = BaseBottomPropTypes & {

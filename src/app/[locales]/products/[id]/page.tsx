@@ -18,5 +18,5 @@ export default async function ProductDetails({
 
   if (data) return <ProductsCard data={data} />;
 
-  if (error) notFound();
+  if (error || !data) notFound();
 }

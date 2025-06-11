@@ -1,9 +1,18 @@
 {
   "error": {
-    "notFound": {
+    "not_found": {
       "title": "Page Not Found",
       "description": "The page you are looking for does not exist.",
       "backToHome": "Back to Home"
+    },
+    "not_found_item": {
+      "title": "Item Not Found",
+      "description": "The item you are looking for does not exist.",
+      "backToHome": "Back to Home"
+    },
+    "general": {
+      "title": "Sorry! Something went wrong!",
+      "go_home_btn": "Go back Home"
     }
   }
 }

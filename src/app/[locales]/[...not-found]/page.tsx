@@ -4,10 +4,10 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function NotFound() {
-  const t = useTranslations('error.notFound');
+  const t = useTranslations('error.not_found');
 
   return (
-    <div className="flex flex-col justify-evenly lg:justify-center items-center h-full w-full container p-8">
+    <div className="flex flex-col justify-evenly lg:justify-center items-center h-full w-full container p-4 desktop:p-8">
       <h2 className="mb-2 text-xl">{t('title')}</h2>
       <p className="mb-4">{t('description')}</p>
       <Link

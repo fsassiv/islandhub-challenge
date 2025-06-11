@@ -40,8 +40,6 @@ export const ProductsList = () => {
           }
         });
 
-        console.log(temp);
-
         setProducts(temp);
         return;
       }
