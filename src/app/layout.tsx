@@ -39,6 +39,9 @@ export default async function RootLayout({
 
   return (
     <html lang="en-US">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${hankenGrotesk.variable} antialiased py-4 px-6 tablet:py-8 tablet:px-10 min-h-screen`}
       >
