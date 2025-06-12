@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        background: 'var(--background), #ffffff',
+        foreground: 'var(--foreground), #161616',
       },
       screens: {
         tablet: '641px',
@@ -23,5 +23,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: ['text-foreground', 'bg-background'],
 };
 export default config;
