@@ -19,13 +19,14 @@ npm run dev
 ## Estrutura de pastas
 
 ```plaintext
-| ../data - .json contendo dados consumidos pela aplicação
-| ../messages - para os dicionarios configurados para internacionalização;
-| /app;
-|    | /[locales] - rotas internationalizadas (home, products, cart);
-| /api - endpoint para consumo dos dados do arquivo data.json;
-| /context - context API para compartilhamento de dados;
-| /features - manter organizados arquivos de um mesmo contexto como componentes que pertencem somente a um fluxo especifico da aplicação. Ex: products_card, products_item, etc... que pertencem a feature 'products';
+|/data - .json contendo dados consumidos pela aplicação
+|/messages - para os dicionarios configurados para internacionalização;
+|/src:
+|----/app;
+|------/[locales] - rotas internationalizadas (home, products, cart);
+|------/api - endpoint para consumo dos dados do arquivo data.json;
+|------/context - context API para compartilhamento de dados;
+|------/features - manter organizados arquivos de um mesmo contexto como componentes que pertencem somente a um fluxo especifico da aplicação. Ex: products_card, products_item, etc... que pertencem a feature 'products';
 
 ```
 
